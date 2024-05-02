@@ -237,5 +237,95 @@ public class DateUtilTest {
 	    Assert.assertEquals(2, date.getMonth());
 	    Assert.assertEquals(29, date.getDay());
 	}
+	
+	@Test
+	public void testNominalFebruary() {
+	    int rand_day_1_to_29 = 1 + new Random().nextInt(29);
+	    DateUtil date = new DateUtil(rand_day_1_to_29, 2, 2024);
+	    System.out.println("testFebruaryNominal > " + date);
+	    date.increment();
+	    System.out.println(date);
+	}
+	@Test
+	public void testNominalMarch() {
+	    int rand_day_1_to_31 = 1 + new Random().nextInt(31);
+	    DateUtil date = new DateUtil(rand_day_1_to_31, 3, 2024);
+	    System.out.println("testMarchNominal > " + date);
+	    date.increment();
+	    System.out.println(date);
+	}
+	@Test
+	public void testNominalApril() {
+	    int rand_day_1_to_30 = 1 + new Random().nextInt(30);
+	    DateUtil date = new DateUtil(rand_day_1_to_30, 4, 2024);
+	    System.out.println("testAprilNominal > " + date);
+	    date.increment();
+	    System.out.println(date);
+	}
+	@Test
+	public void testNominalMay() {
+	    int rand_day_1_to_31 = 1 + new Random().nextInt(31);
+	    DateUtil date = new DateUtil(rand_day_1_to_31, 5, 2024);
+	    System.out.println("testMayNominal > " + date);
+	    date.increment();
+	    System.out.println(date);
+	}
+	@Test
+	public void testNominalJune() {
+	    int rand_day_1_to_30 = 1 + new Random().nextInt(30);
+	    DateUtil date = new DateUtil(rand_day_1_to_30, 6, 2024);
+	    System.out.println("testJuneNominal > " + date);
+	    date.increment();
+	    System.out.println(date);
+	}
+	@Test
+	public void testNominalJuly() {
+	    int rand_day_1_to_31 = 1 + new Random().nextInt(31);
+	    DateUtil date = new DateUtil(rand_day_1_to_31, 7, 2024);
+	    System.out.println("testJulyNominal > " + date);
+	    date.increment();
+	    System.out.println(date);
+	}
+	@Test
+	public void testNominalAugust() {
+	    int rand_day_1_to_31 = 1 + new Random().nextInt(31);
+	    DateUtil date = new DateUtil(rand_day_1_to_31, 8, 2024);
+	    System.out.println("testAugustNominal > " + date);
+	    date.increment();
+	    System.out.println(date);
+	}
+	@Test
+	public void testNominalSeptember() {
+	    int rand_day_1_to_30 = 1 + new Random().nextInt(30);
+	    DateUtil date = new DateUtil(rand_day_1_to_30, 9, 2024);
+	    System.out.println("testSeptemberNominal > " + date);
+	    date.increment();
+	    System.out.println(date);
+	}
+	@Test
+	public void testNominalOctober() {
+	    int rand_day_1_to_31 = 1 + new Random().nextInt(31);
+	    DateUtil date = new DateUtil(rand_day_1_to_31, 10, 2024);
+	    System.out.println("testOctoberNominal > " + date);
+	    date.increment();
+	    System.out.println(date);
+	}
+	@Test
+	public void testNominalNovember() {
+	    int rand_day_1_to_30 = 1 + new Random().nextInt(30);
+	    DateUtil date = new DateUtil(rand_day_1_to_30, 11, 2024);
+	    System.out.println("testNovemberNominal > " + date);
+	    date.increment();
+	    System.out.println(date);
+	}
+	@Test
+	public void testNominalDecember() {
+	    int rand_day_1_to_31 = 1 + new Random().nextInt(31);
+	    DateUtil date = new DateUtil(rand_day_1_to_31, 12, 2024);
+	    System.out.println("testDecemberNominal > " + date);
+	    date.increment();
+	    System.out.println(date);
+	}
+
 
 }
